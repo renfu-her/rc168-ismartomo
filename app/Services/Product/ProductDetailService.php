@@ -77,7 +77,7 @@ class ProductDetailService extends Service
 
         $res = $productDetail->body();
 
-        dd($res);
+        // dd($res);
 
         $res = json_decode($res, true);
 
@@ -106,8 +106,6 @@ class ProductDetailService extends Service
         $submitData = $this->prepareSubmitData($data, $addressData, $customerData);
 
         $this->logOrderEvent('訂單 submitData', $submitData);
-
-        dd($submitData);
 
         $result = Http::asForm()->post(
             $this->api_url .
