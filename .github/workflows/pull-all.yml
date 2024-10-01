@@ -21,4 +21,3 @@ jobs:
           php8.1 artisan v:cache
           php8.1 artisan r:cache
           php8.1 artisan c:cache
-          
